@@ -1,3 +1,14 @@
-<h2 id="title">Welcome to Ember</h2>
-
+<div class="scroll-container">
+    <h1>Scroll of Heroes</h1>
+    <div class="scroll">
+        <ul>
+            {{#each model as |answer|}}
+            <li class="answer">
+                <img src="http://www.gravatar.com/avatar/{{answer.gravatar}}?s=50" />
+                <span>{{answer.firstName}}</span>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
 {{outlet}}

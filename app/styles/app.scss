@@ -1,0 +1,46 @@
+@import "bourbon";
+@import "neat";
+
+body {
+  font-family: monospace;
+  background: url('/img/table-bg.jpg');
+}
+
+.scroll-container {
+  @include outer-container;
+
+  text-align: center;
+
+  h1 {
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .3), -1px -1px 1px rgba(0,0,0, .3);
+    color: rgba(128, 53, 23, .75);
+    font-size: 70px;
+  }
+
+  .scroll {
+    width: 781px;
+    height: 763px;
+    padding: 160px 100px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 40px;
+    background: url('/img/scroll.png');
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      .answer {
+        img {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
