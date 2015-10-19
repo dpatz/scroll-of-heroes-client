@@ -18,7 +18,7 @@ export default function() {
     // GET shorthands
 
     // Collections
-    this.get('/scroll', 'answers');
+    this.get('/answers');
     // this.get('/contacts', 'users');
     // this.get('/contacts', ['contacts', 'addresses']);
 
